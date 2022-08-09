@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs") -%>
+
+<body>
+
+    <h1>Suggestion/Feedback/Complaints</h1>
+    <% infoArr.forEach(function(info){ %>
+    <hr>
+    <hr>
+    <h4>Date:
+    </h4>
+    <p><%=info.date%></p><br>
+    <h4>Name:
+    </h4>
+    <p><%=info.name%></p><br>
+    <h4>Phone Number:
+    </h4>
+    <p><%=info.phoneNumber%></p><br>
+    <h4>Email:
+    </h4>
+    <p><%=info.email%></p><br>
+    <h4>Address:
+    </h4>
+    <p><%=info.address%></p><br>
+    <h4>Landmark:
+    </h4>
+    <p><%=info.landmark%></p><br>
+    <h4>Area:
+    </h4>
+    <p><%=info.area%></p><br>
+    <h4>City:
+    </h4>
+    <p><%=info.city%></p><br>
+    <h4>Call Type:
+    </h4>
+    <p><%=info.callType%></p><br>
+    <h4>Local/Export:
+    </h4>
+    <p><%=info.localExport%></p><br>
+    <h4>Nature:
+    </h4>
+    <p><%=info.nature%></p><br>
+    <h4>Action taken:
+    </h4>
+    <p><%=info.actionTaken%></p><br>
+
+    <% }) %>
+</body>
+
+</html>

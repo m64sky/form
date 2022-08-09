@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs") -%>
+
+<body>
+    <h1>Please fill the following form</h1>
+    <div class="box">
+        <div class="form">
+            <form action="/" method="post">
+                <fieldset>
+                    <label for="date">Date<span>*</span></label><input class="form-control" name="name" type="date"
+                        required>
+                    <label for="customerName">Customer Name<span>*</span></label><input class="form-control"
+                        name="customerName" type="text" required>
+                    <label for="contact">Phone number<span>*</span></label><input type="text" required
+                        class="form-control" name="contact">
+                    <label for="email">Email<span>*</span></label><input name="email" type="email" required
+                        class="form-control" name="email">
+                </fieldset>
+                <fieldset>
+                    <label for="address">Address</label><input type="text" name="address" class="form-control">
+                    <label for="landmark">Landmark</label><input type="text" name="landmark" class="form-control">
+                    <label for="area">Area</label><input type="text" class="form-control" name="area">
+                    <label for="city">City</label><input type="text" class="form-control" name="city">
+                </fieldset>
+                <fieldset>
+                    <label for="callType">Call Type</label>
+                    <select name="callType" class="form-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="0">Complaint</option>
+                        <option value="1">Suggestion</option>
+                        <option value="2">Feedback</option>
+                        <option value="3">Enquiry</option>
+                    </select>
+                    <label for="exportLocal">Local/Export</label>
+                    <select name="exportLocal" class="form-select" aria-label="Default select example">
+                        <option selected>Choose...</option>
+                        <option value="0">Local</option>
+                        <option value="1">Export</option>
+                    </select>
+                    <label for="nature">Nature</label><input name="nature" class="form-control" type="text">
+                    <label for="actionTaken">Action Taken</label><input name="actionTaken" class="form-control"
+                        type="text">
+                </fieldset>
+                <button style="float: right" type="submit" class="btn btn-primary btn-md">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
